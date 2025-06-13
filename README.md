@@ -15,9 +15,6 @@ GCD-SystemVerilog/
 ├── GCD_top.sv # Top module instantiating datapath and controller
 ├── GCD_tb.sv # Testbench to simulate GCD operation
 
-yaml
-Copy
-Edit
 
 ---
 
@@ -39,17 +36,11 @@ Edit
    vlog gcd_if.sv GCD_datapath.sv controller.sv GCD_top.sv GCD_tb.sv
 Simulate the testbench:
 
-tcl
-Copy
-Edit
 vsim tb_top
 run -all
 View waveform or monitor output in terminal.
 
 🖥️ Sample Output (Console)
-sql
-Copy
-Edit
   0 clk=0 start=0 data_in=0 result=x done=x
 #                    5 clk=1 start=1 data_in=0 result=x done=0
 #                    7 clk=1 start=1 data_in=143 result=x done=0
@@ -81,9 +72,6 @@ GitHub: https://github.com/pvsai27
 📌 License
 This project is open-source under the MIT License.
 
-yaml
-Copy
-Edit
 
 ---
 
